@@ -1,8 +1,11 @@
 // Load header and footer dynamically
 document.addEventListener("DOMContentLoaded", function() {
-    fetch('../partials/header.html')
+    fetch("partials/header.html")
         .then(response => response.text())
-        .then(data => document.getElementById("header").innerHTML = data);
+        .then(data => {
+            document.getElementById("header-placeholder").innerHTML = data;
+        })
+        .catch(error => console.error("Error loading header:", error));
 
     fetch('../partials/footer.html')
         .then(response => response.text())
