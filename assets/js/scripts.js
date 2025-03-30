@@ -1,13 +1,28 @@
 // Load header and footer dynamically
 document.addEventListener("DOMContentLoaded", function() {
-    fetch("partials/header.html")
+    // Determine if we're in the pages directory
+    const isInPages = window.location.pathname.includes('/pages/');
+    const partialsPath = isInPages ? '../partials/' : 'partials/';
+    const rootPath = isInPages ? '../' : '';
+    
+    // Load header
+    fetch(partialsPath + 'header.html')
         .then(response => response.text())
         .then(data => {
-            document.getElementById("header-placeholder").innerHTML = data;
+            // Adjust paths in header HTML based on location
+            let headerHtml = data;
+            if (isInPages) {
+                headerHtml = headerHtml
+                    .replace(/href="index.html"/g, 'href="../index.html"')
+                    .replace(/href="pages\//g, 'href="../pages/')
+                    .replace(/src="assets\//g, 'src="../assets/');
+            }
+            document.getElementById("header-placeholder").innerHTML = headerHtml;
         })
         .catch(error => console.error("Error loading header:", error));
 
-    fetch('../partials/footer.html')
+    // Load footer
+    fetch(partialsPath + 'footer.html')
         .then(response => response.text())
         .then(data => document.getElementById("footer").innerHTML = data);
 });
