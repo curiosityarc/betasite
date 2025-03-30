@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Join the Arc - Curiosity Arc Foundation</title>
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/join-the-arc.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- AOS Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body>
+    <!-- Header -->
+    <div id="header-placeholder"></div>
+
+    <!-- Hero Section -->
+    <section class="hero text-center text-white d-flex align-items-center" data-aos="fade-up">
+        <div class="container">
+            <h1 class="display-4 mb-4">Join Our Research Community</h1>
+            <p class="lead mb-4" data-aos="fade-up" data-aos-delay="200">
+                Be part of groundbreaking research initiatives that shape India's technological future
+            </p>
+        </div>
+    </section>
+
+    <!-- Ways to Join Section -->
+    <section class="ways-to-join py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">Ways to Get Involved</h2>
+            <div class="row">
+                <!-- Researcher -->
+                <div class="col-md-4 mb-4" data-aos="fade-up">
+                    <div class="involvement-card">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-microscope"></i>
+                        </div>
+                        <h3>Join as a Researcher</h3>
+                        <p>Lead or participate in cutting-edge research projects in sustainability and technology.</p>
+                        <ul class="benefits-list">
+                            <li>Access to state-of-the-art facilities</li>
+                            <li>Collaboration opportunities</li>
+                            <li>Research funding</li>
+                            <li>Publication support</li>
+                        </ul>
+                        <a href="#contact-form" class="btn btn-primary mt-3">Apply Now</a>
+                    </div>
+                </div>
+
+                <!-- Partner -->
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="involvement-card">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3>Partner with Us</h3>
+                        <p>Collaborate with us as an organization to drive innovation and create impact.</p>
+                        <ul class="benefits-list">
+                            <li>Joint research initiatives</li>
+                            <li>Technology transfer</li>
+                            <li>CSR opportunities</li>
+                            <li>Innovation workshops</li>
+                        </ul>
+                        <a href="#contact-form" class="btn btn-primary mt-3">Partner Now</a>
+                    </div>
+                </div>
+
+                <!-- Supporter -->
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="involvement-card">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Support Our Mission</h3>
+                        <p>Contribute to our mission of advancing technology research for sustainability.</p>
+                        <ul class="benefits-list">
+                            <li>Project sponsorship</li>
+                            <li>Research grants</li>
+                            <li>Equipment donation</li>
+                            <li>Mentorship programs</li>
+                        </ul>
+                        <a href="#contact-form" class="btn btn-primary mt-3">Support Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Current Opportunities -->
+    <section class="opportunities py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">Current Opportunities</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4" data-aos="fade-up">
+                    <div class="opportunity-card">
+                        <span class="badge bg-success">Research Position</span>
+                        <h4>AI Research Fellow</h4>
+                        <p>Join our team developing AI solutions for climate change prediction and mitigation.</p>
+                        <ul class="requirements">
+                            <li>PhD in Computer Science or related field</li>
+                            <li>Experience in machine learning</li>
+                            <li>Publication track record</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="opportunity-card">
+                        <span class="badge bg-primary">Partnership</span>
+                        <h4>Renewable Energy Project</h4>
+                        <p>Seeking industry partners for solar energy efficiency research project.</p>
+                        <ul class="requirements">
+                            <li>Expertise in solar technology</li>
+                            <li>R&D capabilities</li>
+                            <li>Long-term commitment</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact-form" class="contact-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">Get in Touch</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8" data-aos="fade-up">
+                    <form class="contact-form">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="involvement" class="form-label">How would you like to get involved?</label>
+                            <select class="form-select" id="involvement" required>
+                                <option value="">Select an option</option>
+                                <option value="researcher">Join as a Researcher</option>
+                                <option value="partner">Partner with Us</option>
+                                <option value="supporter">Support Our Mission</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Your Message</label>
+                            <textarea class="form-control" id="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- Custom Scripts -->
+    <script src="../assets/js/scripts.js"></script>
+    <script src="../assets/js/join-the-arc.js"></script>
+</body>
+</html>
